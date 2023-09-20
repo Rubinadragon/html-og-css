@@ -1,10 +1,14 @@
+html{
+    font-size: calc(1em + 1vw);
+}
+
 body{
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
+    background-color: hsl(30, 2%, 43%);
 }
 
-/*CSS for header og nav
-*/
+/*CSS for header og nav*/
 
 header{
     text-align: center;
@@ -26,9 +30,13 @@ header nav span a{
 
 nav a{
     text-decoration: none;
-    color: #000;
+    color: hsl(0, 0%, 0%);
     padding: 1rem;
     display: inline-block;
+}
+
+*{
+    box-sizing: border-box
 }
 
 main{
@@ -36,16 +44,71 @@ main{
 }
 
 main section h2{
-    margin: 2rem;
+    margin: 2rem 0;
 }
 
 article{
     max-width: 400px;
     min-width: 200px;
     width: 100%;
-    margin: 0 auto;
+    margin: 1rem auto;
+    background-color: hsl(38, 5%, 61%);
 }
 
 main section article img{
     width: 100%;
+}
+
+h1{
+    font-size: 2rem;
+}
+
+h2{
+    font-size: 1.8rem;
+}
+
+h3{
+    font-size: 1.6rem;
+}
+
+p{
+    font-size: 1.4rem;
+    margin: 15px;
+}
+
+/*Bruker . når vi skriver klasser*/
+.read-more-btn{
+    background-color: rgb(43, 43, 43);
+    color: hsl(0, 6%, 77%);
+    display: inline-block;
+    padding: 1rem;
+    margin: 0.5rem;
+    text-decoration: none;
+}
+
+#about-section{
+    text-align: center;
+    padding: 2rem 0 2rem;
+}
+
+#about-section p{
+    text-align: justify;
+}
+
+#pynt{
+    background-image: url(img/shellfish-8080937_1280.jpg);
+    height: 300px;
+    background-size: cover;
+    
+}
+
+#subscribe{
+    background-color: hsl(38, 5%, 61%);
+    padding: 1rem;
+    text-align: center;
+}
+
+#subscribe form label, #subscribe form input{
+    display: block;
+    margin: 0 auto;
 }
